@@ -155,6 +155,13 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
+        Codedge\Fpdf\FpdfServiceProvider::class,
+
+
+        //soap
+       // 'Artisaninweb\SoapWrapper\ServiceProvider',
+        Artisaninweb\SoapWrapper\ServiceProvider::class,
 
         //  3rd Party Service Providers...          
         Collective\Html\HtmlServiceProvider::class,
@@ -207,6 +214,10 @@ return [
         'Input'     => Illuminate\Support\Facades\Input::class, 
         'Form'      => Collective\Html\FormFacade::class,
         'HTML'      => Collective\Html\HtmlFacade::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Fpdf' => Codedge\Fpdf\Facades\Fpdf::class,
+      'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
+       // 'SoapWrapper' => 'Artisaninweb\SoapWrapper\Facades\SoapWrapper',
     ],
 
 ];

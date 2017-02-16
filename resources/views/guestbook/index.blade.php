@@ -1,7 +1,7 @@
 @extends("guestbook.template")
 @section("content")
 
-
+<a href="{{url('/pdf')}}">PDF</a>   
 @foreach($comments as $com)
 <!-- start comment -->
   <div class="row col-md-12 well">
